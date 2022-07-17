@@ -1,4 +1,19 @@
-#Name: Bryce Simonds
+# Name: Bryce Simonds
+## Reflection:
+I felt pretty good about each user story, got through all 4. 
+
+The part that took me longest was trying to figure out the AR method to count the number of recipes each ingredient is used in. I tried 'where' before and it wasn't working. Turns out I was in the wrong test, so that was funny.
+
+I spent time on that, realized I could just get it to run with ruby then come back to it. So I did that, then finished and had time to refactor it trying the where again. Did some pry-ing and that's how I figured out my dilemma. 
+
+Spent my remaining time trying to figure out a way to utilize AR for the 4th user story: 
+When I visit '/recipes/:id'
+I see the total cost of all of the ingredients in the recipe.
+
+I'd love to hear you're thoughts/feedback on it. Thank you for all you do/are doing. I feel like I have learned so much and appreciate all the practice!
+Cheers,
+Bryce Simonds
+
 
 # Hells Kitchen
 
