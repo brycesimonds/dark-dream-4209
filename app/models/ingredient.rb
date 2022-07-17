@@ -6,12 +6,6 @@ class Ingredient < ApplicationRecord
     has_many :recipes, through: :recipe_ingredients
 
     def number_of_recipes
-        count_of_recipes_with_specific_ingredient = []
-        RecipeIngredient.all.each do |recipe_ingredient|
-            if recipe_ingredient.ingredient_id == id
-                count_of_recipes_with_specific_ingredient << recipe_ingredient
-            end
-        end
-        count_of_recipes_with_specific_ingredient.count
+        RecipeIngredient.where('ingredient_id = ?', "#{id}").count
     end
 end

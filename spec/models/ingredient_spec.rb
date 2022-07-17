@@ -35,8 +35,8 @@ RSpec.describe Ingredient, type: :model do
         RecipeIngredient.create!(recipe: burger, ingredient: red_sauce)
         RecipeIngredient.create!(recipe: burger, ingredient: spices)
         RecipeIngredient.create!(recipe: burger, ingredient: garlic)
-        expect(coconut_milk.number_of_recipes).to eq(1)
         expect(spices.number_of_recipes).to eq(2)
+        expect(coconut_milk.number_of_recipes).to eq(1)
       end
     end
   end 

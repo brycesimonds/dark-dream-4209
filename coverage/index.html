@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-07-17T15:19:00-06:00">2022-07-17T15:19:00-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-07-17T15:28:01-06:00">2022-07-17T15:28:01-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.96
+         1.27
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>214</b> relevant lines,
-    <span class="green"><b>214</b> lines covered</span> and
+    <b>210</b> relevant lines,
+    <span class="green"><b>210</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -128,11 +128,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#fac18835787b1e479a8335ad717778af598f86db" class="src_link" title="app/models/ingredient.rb">app/models/ingredient.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">17</td>
             <td class="cell--number">11</td>
-            <td class="cell--number">11</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">7</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">15.82</td>
+            <td class="cell--number">2.86</td>
             
           </tr>
         
@@ -795,8 +795,8 @@
     
 
     <div class="t-line-summary">
-      <b>11</b> relevant lines.
-      <span class="green"><b>11</b> lines covered</span> and
+      <b>7</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -902,78 +902,12 @@
 
             
 
-            <code class="ruby">        count_of_recipes_with_specific_ingredient = []</code>
+            <code class="ruby">        RecipeIngredient.where(&#39;ingredient_id = ?&#39;, &quot;#{id}&quot;).count</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="14" data-linenumber="10">
-            <span class="hits">14</span>
-            
-
-            
-
-            <code class="ruby">        RecipeIngredient.all.each do |recipe_ingredient|</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="108" data-linenumber="11">
-            <span class="hits">108</span>
-            
-
-            
-
-            <code class="ruby">            if recipe_ingredient.ingredient_id == id</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="18" data-linenumber="12">
-            <span class="hits">18</span>
-            
-
-            
-
-            <code class="ruby">                count_of_recipes_with_specific_ingredient &lt;&lt; recipe_ingredient</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="13">
-            
-            
-
-            
-
-            <code class="ruby">            end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="14">
-            
-            
-
-            
-
-            <code class="ruby">        end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="14" data-linenumber="15">
-            <span class="hits">14</span>
-            
-
-            
-
-            <code class="ruby">        count_of_recipes_with_specific_ingredient.count</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="16">
+          <li class="never" data-hits="" data-linenumber="10">
             
             
 
@@ -984,7 +918,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="17">
+          <li class="never" data-hits="" data-linenumber="11">
             
             
 
@@ -5330,7 +5264,7 @@
 
             
 
-            <code class="ruby">        expect(coconut_milk.number_of_recipes).to eq(1)</code>
+            <code class="ruby">        expect(spices.number_of_recipes).to eq(2)</code>
           </li>
         </div>
       
@@ -5341,7 +5275,7 @@
 
             
 
-            <code class="ruby">        expect(spices.number_of_recipes).to eq(2)</code>
+            <code class="ruby">        expect(coconut_milk.number_of_recipes).to eq(1)</code>
           </li>
         </div>
       
