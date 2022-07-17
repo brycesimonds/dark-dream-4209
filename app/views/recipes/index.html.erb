@@ -1,0 +1,9 @@
+<h1>Recipes Index Page</h3>
+
+<% @recipes.each do |recipe| %>
+    <h2><%= "Name: #{recipe.name}" %></h2>
+    <ul>
+        <li><%= "Complexity: #{recipe.complexity}" %></li>
+        <li><%= "Genre: #{recipe.genre}" %></li>
+    </ul>
+<% end %>
